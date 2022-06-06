@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Order summary card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    :root {
+
+      /* ### Primary */
+      --Pale-blue: hsl(225, 100%, 94%);
+      --Bright-blue: hsl(245, 75%, 52%);
+
+      /* ### Neutral */
+
+      --Very-pale-blue: hsl(225, 100%, 98%);
+      --Desaturated-blue: hsl(224, 23%, 55%);
+      --Dark-blue: hsl(223, 47%, 23%);
+  }
+     body{
+      background-color: var(--Pale-blue);
+      font-family: 'Red Hat Display', sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: calc(100vh - 0.1px);
+      font-size: 16px;
+      color: var(--Desaturated-blue);
+    }
+    .card{
+    /* flexbox */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* size */
+    width: 375px;
+
+    /* color */
+    background-color: white;
+
+    /* round borders*/
+    border-radius: 20px;
+    
+    text-align: center;
+    }
+
+    .illustration-hero{
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      width: 375px;
+    }
+
+    h1{
+      color: var(--Dark-blue);
+    }
+    .content{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 70%;
+      margin-bottom: 25px;
+      margin-top: 25px;
+      /* margin: 25px 20px 10px 20px; */
+    }
+    .plan{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+    }
+    .icon-music{
+      width: 50px;
+      height: 50px;
+      align-items: center;
+      margin-right: 20px;
+    }
+    .elemet-plan{
+      font-weight: 700;
+      color: var(--Dark-blue);
+      
+    }
+    .plan2 p{
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    a{
+      font-weight: 700;
+    }
+
+    button{
+      background: hsl(245, 75%, 52%);
+      color: hsl(225, 100%, 98%);
+      width: 350px;
+      height: 50px;
+      font-weight: 700;
+      letter-spacing: 0.2px;
+      border-radius: 10px;
+      box-shadow: 0px 16px 10px 5px hsla(224, 23%, 55%, 0.253);
+      border: none;
+      margin-bottom: 20px;
+      cursor: pointer;
+    }
+
+    .cancel p{
+      font-weight: 700;
+    }
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="images/illustration-hero.svg" alt="nft" class="illustration-hero">
+    <h1>Order Summary</h1> 
+    <p>You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
+    <div class="content">
+      <div class="plan">
+        <img src="images/icon-music.svg" alt="icon with musical note" class="icon-music">
+            <div class="plan2">
+                <p class="elemet-plan">Annual Plan</p>
+                <p class="elemet-pago">$59,99/year</p>
+            </div>
+      </div>
+      <a href="#">Change</a>
+    </div>
+
+    <button>Proceed to Payment</button>
+      
+    <div class="cancel">
+        <p>Cancel order</p>
+    </div>
+
+    <footer class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/camidesarrollo">Camila Paz Zaragoza Villaseca</a>.
+    </footer>
+  </div>
+
+</body>
+</html>
